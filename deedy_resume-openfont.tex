@@ -1,0 +1,250 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.2 (16/9/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+\usepackage[T1]{fontenc}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+ 
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Kapa}{Kudaibergenov}{ \urlstyle{same}\href{https://www.kaggle.com/kapakudaibergenov}{Kaggle} | \href{https://github.com/kudkapa59}{Github}\\
+\href{mailto:kudkapa59@gmail.com}{kudkapa59@gmail.com} | +420775333602 | \href{https://www.linkedin.com/in/kapa-kudaibergenov/}{LinkedIn}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education} 
+
+\subsection{CTU}
+\descript{Bc. in Electrical Engineering and Computer Science}
+\location{by Sept 2021 | Prague, Czech Republic}
+Faculty of Electrical Engineering \\
+%Magna Cum Laude\\
+\location{ Avg. GPA: 1.39} %\\
+%Major GPA: 3.9 / 4.0}
+\sectionsep
+\subsection{Gymnasium 4}
+\location{Grad. May 2016|  Aktau,Kazakhstan}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\subsection{Undergraduate}
+Pattern recognition and Machine learning\\
+Cybernetics and Artificial intelligence\\
+Programming Algorithms\\
+Probability and Statistics\\
+Signal Theory
+\sectionsep
+
+\subsection{On-line}
+Intro to Machine Learning - Coursera\\
+Introduction to Deep Learning - MIT 6.S191\\
+Inferential Statistics - Udemy\\
+Intermediate Machine Learning - Kaggle\\
+Natural Language Processing - Kaggle\\
+Data Visualization - Kaggle\\
+Intro to SQL - Kaggle\\
+{\footnotesize \textit{\textbf{(working with BigQuery) }}} \\
+Fundamentals of Git - Stepik\\
+%{\footnotesize \textit{\textbf{(Research Asst. \& Teaching Asst 2x) }}} \\
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+\location{Proficient with:}
+Python \textbullet{}  Microsoft Excel\textbullet{} SQL\textbullet{} \\
+Linux \textbullet{} Git \textbullet{}\\ 
+\location{Good with:}
+C++ \textbullet{} HTML \textbullet{} Matlab \textbullet{} \LaTeX\textbullet{} \\
+\location{Familiar with:}
+Javascript \textbullet{} R(learning) \textbullet{}  PowerBI(learning)\textbullet{}
+\sectionsep
+
+\subsection{Machine Learning}
+Python libraries(scikit-learn,seaborn,tensorflow, plotly,pandas,matplotlib) \textbullet{}  Algorithms(XGBoost, Random Forest, Neural Networks)\textbullet{} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Projects}
+
+\runsubsection{Sudoku Solver}
+\descript{| \href{https://github.com/kudkapa59/SudokuSolver}{Github}}
+\location{Winter 2021 | Prague, Czech Republic}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Python program designed to solve any sudoku puzzles.
+\item Implemented Backtracking Algorithm with the use of Object Oriented Programming and Unit Testing.
+\end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+
+\runsubsection{FEL, Czech Technical University}
+\descript{| Assistant Engineer }
+\location{Oct 2019 - Jan 2020 | Prague, Czech Republic}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+Databases: After the University course at the Department of Circuit Theory I had an opportunity to collaborate with the work staff. Thanks to them I had experience on creating a new project. The project consisted of ordering
+audiofiles’ database of people with Parkinson and Multiple System Atrophy(MSA) in Matlab.\\
+The technological implementation lay in an upgrade of the operational algorithms, which would substitute much work of the technician. I was consulting about the stridor caused by MSA with specialists at Neurologick´a klinika 1.
+LF UK a VFN.
+\sectionsep
+
+\runsubsection{a&o Hostels}
+\descript{| Front Desk Receptionist and Bartender}
+\location{Jan 2018 – March 2018 | Prague, Czech Republic}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Customer Service: Responsible for providing a friendly atmosphere to guests entering the hotel. Implemented cash operations and was taking the payment in the form of cash and credit cards. At the same time, I had
+experience of working as a bartender and was obliged to make cocktails, serving food and beverages.
+\item Organizational Part: Had to meet touristic groups and allocate their rooms depending on their preferences. Due to experience of working in hotels, within one month of work I was leading a group of new receptionists.
+\item Soft Skills: Most of the time I managed to communicate with people, who didn’t speak my language.
+\item Time Management: Often had to work at night, so I have experience in working in hard conditions and different time of day.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Panorama Hotel}
+\descript{| Wait Staff}
+\location{May 2017 - July 2017 | Prague, Czech Republic}
+\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Customer Service: Working within an international group. Providing excellent wait service. Participating in designing the banquets for 200+ people.
+\item Time Management: Working predominantly at breakfasts and lunches
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Needed to just comment awards sectiom, but deleted it
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\section{Publications} 
+%\renewcommand\refname{\vskip -1.5em} % Couldn't get this working from the .cls file
+%\bibliographystyle{abbrv}
+%\bibliography{publications}
+%\nocite{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     LANGUAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Languages}
+
+English{\footnotesize \textit{\textbf{(proficient) }}} \textbullet{}  Czech{\footnotesize \textit{\textbf{(good working knowledge) }}}\textbullet{} 
+French{\footnotesize \textit{\textbf{(working knowledge) }}}\textbullet{}
+Russian{\footnotesize \textit{\textbf{(native speaker) }}}\textbullet{}
+Kazakh{\footnotesize \textit{\textbf{(native speaker) }}}\textbullet{} 
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     HOBBIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Hobbies}
+Psychology\textbullet{}  Martial Arts\textbullet{} Chess\textbullet{} Learning Languages\textbullet{}\\
+\sectionsep
+
+\end{minipage} 
+\end{document}  \documentclass[]{article}
